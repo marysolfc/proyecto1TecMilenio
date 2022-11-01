@@ -1,0 +1,33 @@
+/*
+body{
+    
+    font-family: 'Playfair Display', serif;
+
+    font-family: 'Raleway', sans-serif;
+}
+*/
+
+.fila1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fila2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.fila3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.catego-fila1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+img{
+    width: 300px;
+
+}
