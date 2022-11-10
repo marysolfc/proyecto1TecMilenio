@@ -29,6 +29,7 @@ p{
 }
 a{
     text-decoration: none;
+    font-weight: 800;
 }
 span{
     color: #037bc0;
@@ -39,24 +40,26 @@ button{
     border: 1px solid #037BC0;
     border-radius: 5px;
     height: 30px;
+    margin-bottom: 20px;
 
 }
-/* .navbar{
+.navbar{
     display: flex;
-} */
-.navbar li{
-    border: 1px solid black;
-    display: inline;
-    align-content: space-around;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
+a:hover{
+    border-bottom: 1px solid #037BC0;
+}
 .hero{
     width: 100%;
     height: 400px;
     background-image: url(imgs/principal.jpg);
+    /* object-fit: cover; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-x: center; 
 }
 
 .container{
@@ -82,8 +85,6 @@ margin-bottom: 50px;
     margin-bottom: 10px;
     border: 1px solid #999;
     border-radius: 10px 10px;
-    
-    
 }
 .fila1 .imagen{    
     grid-column: span 4;
@@ -106,20 +107,21 @@ margin-bottom: 50px;
     grid-template-columns: repeat(6,1fr);
     gap: 10px;
     margin-bottom: 10px;
-    
+
 }
 
 .fila2 .articulo{
     border: 1px solid #999;
     grid-column: span 3;
-    border-radius: 10px 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: #037BC0;
 }
 
 .fila2 .articulo .imagen img{
     object-fit: cover;
   width:100%;
   height:100%;
-  border-radius: 10px 10px;
+  border-radius: 7px 7px 0 0;
 }
 
 
@@ -130,15 +132,16 @@ margin-bottom: 50px;
 }
 .fila3 .articulo{
     border: 1px solid #999;
-    border-radius: 10px 10px;
+    border-radius: 10px 10px 0 0;
     grid-column: span 2;
+    background-color: #037BC0;
 }
 
 .fila3 .articulo img{
     object-fit: cover;
   width:100%;
   height:100%;
-  border-radius: 10px 10px;
+  border-radius: 7px 7px 0 0;
 }
 .categorias{
     margin-top: 50px;
