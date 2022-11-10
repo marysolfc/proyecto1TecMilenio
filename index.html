@@ -16,81 +16,105 @@
   </head>
   <body>
     <header>
-      <h1>Tienda de <span style="color: #037bc0">Muebles</span></h1>
+      <h1>Tienda de <span>Muebles</span></h1>
     </header>
-    <nav>
-      <a href="/">Inicio</a>
-      <a href="">Nosotros</a>
-      <a href="">Tienda</a>
-      <a href="">Blog</a>
-      <a href="">Galeria</a>
-      <a href="">Contacto</a>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="/">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Nosotros</a>
+        </li>
+        <li>
+          <a href="#">Tienda</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Galeria</a>
+        </li>
+        <li>
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
     </nav>
-    <div>
-      <h1>hero imagen</h1>
+    <div class="hero">
+      <h1>&nbsp;</h1>
     </div>
-    <main>
-      <section class="nuestrosproductos">
-        <h2>Nuestros Productos</h2>
+    <main class="container">
+      <section class="nuestros-productos">
+        <h2 class="titulo">Nuestros Productos</h2>
         <article class="fila1">
-          <div>
+          <div class="imagen">
             <img src="imgs/producto1.jpg" alt="Imagen producto 1" />
           </div>
-          <div>
+          <div class="descripcion">
             <h3>Producto 1</h3>
-            <p>Descripción del producto</p>
+            <p>Descripción del producto: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, saepe.</p>
             <h3>$12,000.00</h3>
             <button>Agregar al carrito</button>
           </div>
         </article>
         <article class="fila2">
-          <div>
-            <img src="imgs/producto2.jpg" alt="Imagen producto 2" />
+          <div class="articulo">
+            <div class="imagen">
+              <img src="imgs/producto2.jpg" alt="Imagen producto 2" />
+            </div>
+            <div class="descripcion">
+              <h3>Producto 2</h3>
+              <p>Descripción del producto: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque labore doloribus deserunt quos deleniti iure!</p>
+              <h3>$12,000.00</h3>
+              <button>Agregar al carrito</button>
+            </div>
           </div>
-          <div>
-            <h3>Producto 2</h3>
-            <p>Descripción del producto</p>
-            <h3>$12,000.00</h3>
-            <button>Agregar al carrito</button>
-          </div>
-          <div>
-            <img src="imgs/producto3.jpg" alt="Imagen producto 3" />
-          </div>
-          <div>
-            <h3>Producto 3</h3>
-            <p>Descripción del producto</p>
-            <h3>$12,000.00</h3>
-            <button>Agregar al carrito</button>
+          <div class="articulo">
+            <div class="imagen">
+              <img src="imgs/producto3.jpg" alt="Imagen producto 3" />
+            </div>
+            <div class="descripcion">
+              <h3>Producto 3</h3>
+              <p>Descripción del producto: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci blanditiis doloribus sint repellendus consectetur debitis.</p>
+              <h3>$12,000.00</h3>
+              <button>Agregar al carrito</button>
+            </div>
           </div>
         </article>
         <article class="fila3">
-          <div>
-            <img src="imgs/producto4.jpg" alt="Imagen producto 4" />
+          <div class="articulo">
+            <div>
+              <img src="imgs/producto4.jpg" alt="Imagen producto 4" />
+            </div>
+            <div class="descripcion">
+              <h3>Producto 4</h3>
+              <p>Descripción del producto: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, non.</p>
+              <h3>$12,000.00</h3>
+              <button>Agregar al carrito</button>
+            </div>
           </div>
-          <div>
-            <h3>Producto 4</h3>
-            <p>Descripción del producto</p>
-            <h3>$12,000.00</h3>
-            <button>Agregar al carrito</button>
+          <div class="articulo">
+            <div>
+              <img src="imgs/producto5.jpg" alt="Imagen producto 5" />
+            </div>
+            <div class="descripcion">
+              <h3>Producto 5</h3>
+              <p>Descripción del producto: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, neque.</p>
+              <h3>$12,000.00</h3>
+              <button>Agregar al carrito</button>
+            </div>
           </div>
-          <div>
-            <img src="imgs/producto5.jpg" alt="Imagen producto 5" />
-          </div>
-          <div>
-            <h3>Producto 5</h3>
-            <p>Descripción del producto</p>
-            <h3>$12,000.00</h3>
-            <button>Agregar al carrito</button>
-          </div>
+         <div class="articulo">
           <div>
             <img src="imgs/producto6.jpg" alt="Imagen producto 6" />
           </div>
-          <div>
+          <div class="descripcion">
             <h3>Producto 6</h3>
-            <p>Descripción del producto</p>
+            <p>Descripción del producto: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, officia.</p>
             <h3>$12,000.00</h3>
             <button>Agregar al carrito</button>
           </div>
+         </div>
         </article>
       </section>
       <section class="categorias">
@@ -110,36 +134,41 @@
           </div>
         </article>
       </section>
-    </main>
+    
     <footer>
       <div>
         <h3>Categorias</h3>
         <nav>
-          <a href="">Cocina</a>
-          <a href="">Oficina</a>
-          <a href="">Jardín</a>
-          <a href="">Cochera</a>
-          <a href="">Dormitorios</a>
+          <a href="#">Cocina</a>
+          <a href="#">Oficina</a>
+          <a href="#">Jardín</a>
+          <a href="#">Cochera</a>
+          <a href="#">Dormitorios</a>
         </nav>
       </div>
       <div>
         <h3>Sobre Nosotros</h3>
         <nav>
-          <a href="">Nuestra Historia</a>
-          <a href="">Misión, Visión y valores</a>
-          <a href="">Carrera</a>
-          <a href="">Políticas de privacidad</a>
-          <a href="">Términos del servicio</a>
+          <a href="#">Nuestra Historia</a>
+          <a href="#">Misión, Visión y valores</a>
+          <a href="#">Carrera</a>
+          <a href="#">Políticas de privacidad</a>
+          <a href="#">Términos del servicio</a>
         </nav>
       </div>
       <div>
         <h3>Soporte</h3>
         <nav>
-          <a href="">Preguntas frecuentes</a>
-          <a href="">Ayuda en línea</a>
-          <a href="">Confianza y seguridad</a>
+          <a href="#">Preguntas frecuentes</a>
+          <a href="#">Ayuda en línea</a>
+          <a href="#">Confianza y seguridad</a>
         </nav>
       </div>
+      
     </footer>
+    <div class="derechos">
+      <p>Todos los derechos reservados. TiendaMubles</p>
+    </div>
+  </main>
   </body>
 </html>
