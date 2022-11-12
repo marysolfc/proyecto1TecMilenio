@@ -186,3 +186,88 @@ footer nav{
     color: black;
     font-size: small;
 }
+
+/* ======== sesion 5: responsive design ======== */
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+	.main-container {
+        min-width: 475px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+      .fila1{
+        display: grid;
+        /* gap: 1.6em; */
+        grid-template-columns: repeat(1,1fr);    
+        grid-template-rows: repeat(2,1fr);    
+        margin-bottom: 10px;
+        border: 1px solid #999;
+        border-radius: 10px 10px;
+    }
+    h3,p{
+        font-size: 75%;
+    }
+    .fila1 .descripcion{
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .fila1 .imagen img{
+        object-fit: cover;
+        width:100%;
+        height:100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .fila2, .fila3, footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 10px;
+    
+    }
+    a{
+        font-size: 70%;
+    }
+    .derechos p{
+        font-size: 60%;
+    }
+.hero{
+    height: 100px;
+}
+
+}
+@media (min-width: 576px) and (max-width: 770px) {
+	a{
+        font-size: 85%;
+    }
+    .hero{
+        height: 200px;
+    }
+    header h1{
+        font-size: 100%;
+    }
+    .navbar{
+        font-size: 90%;
+    }
+}
+/** dispositivos medianos (tablets) */
+@media (min-width: 771px) and (max-width: 900px) {
+    header h1{
+        font-size: 100%;
+    }
+    a{
+        font-size: 85%;
+    }
+    .hero{
+        height: 200px;
+    }
+}
+
+@media (min-width: 901px) and (max-width:1200px) {}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 1201px) and (max-width: 1480px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}
