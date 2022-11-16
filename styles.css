@@ -190,9 +190,7 @@ footer nav{
 /* ======== sesion 5: responsive design ======== */
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
-	.main-container {
-        min-width: 475px;
-      }
+
       h1 {
         font-size: 30px;
       }
